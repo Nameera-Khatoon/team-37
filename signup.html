@@ -11,7 +11,7 @@
             width: 25%;
             /* #63a2ea */
             margin: auto;
-            margin-top: 25px;
+            margin-top: 5rem;
             background-color: #1ee7e7;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
@@ -39,7 +39,7 @@
         
         /* button{padding-right:15px;} */
 
-        input[type="text"], input[type="email"]{
+        input[type="text"], input[type="email"],input[type="password"]{
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
@@ -73,7 +73,7 @@ button{width: 80%;}
         <h1>- Visitor -</h1>
         <input id="name" type="text" placeholder="Full name" /><br />
         <input id="email" type="email" placeholder="Email" /><br />
-        <input id="orga" type="text" placeholder="Organization" /><br />
+        <input id="orga" type="password" placeholder="Password" /><br />
         <input type="submit" value="SIGN UP"/>
         <div class="mini"><a href="navBar.html">RETURN</a> </div>
        </form>
@@ -101,7 +101,7 @@ event.preventDefault();
         alert("SignUp successful")
         localStorage.setItem("name",name);
         localStorage.setItem("email",email);
-        localStorage.setItem("Organization",Organization);
+        localStorage.setItem("Password",Organization);
      }
     }
 </script>
